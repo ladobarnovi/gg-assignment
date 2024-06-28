@@ -1,0 +1,64 @@
+.kycReportListItem {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-block: 8px;
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  td {
+    padding-block: 12px;
+    padding-right: 8px;
+    vertical-align: middle;
+
+    .centerContainer {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    svg {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .dates, .name {
+    p:last-child {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 4px;
+    }
+  }
+
+  .risk {
+    text-transform: capitalize;
+
+    svg {
+      &.low{
+        color: var(--color-success)
+      }
+
+      &.medium {
+        color: var(--color-warning)
+      }
+
+      &.high {
+        color: var(--color-danger)
+      }
+    }
+  }
+
+  .status {
+    text-transform: capitalize;
+
+    svg {
+      &.cancelled {
+        color: var(--color-danger);
+      }
+
+      &.approved {
+        color: var(--color-success)
+      }
+    }
+  }
+}

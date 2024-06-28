@@ -1,0 +1,10 @@
+@import "assets/styles/reset.css";
+
+html {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+
+  --color-success: #006400;
+  --color-warning: #FF8C00;
+  --color-danger: #8B0000;
+}

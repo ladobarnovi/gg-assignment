@@ -1,0 +1,23 @@
+.kycReportContainer {
+  padding: 16px;
+  background-color: white;
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  table {
+    margin-top: 16px;
+    width: 100%;
+    text-align: left;
+
+    thead {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+      th {
+        padding-block: 16px;
+      }
+    }
+  }
+}
